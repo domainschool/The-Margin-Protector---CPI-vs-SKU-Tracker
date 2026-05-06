@@ -22,7 +22,7 @@ To compare raw dollars (SKU prices) with index values (CPI), we use a standard f
 *   **Establishing the Base:** The system finds the earliest date where *both* the internal SKU data and the CPI data have a value. It assigns both lines a starting value of `100`.
 *   **Calculating Growth:** For every subsequent month, the current value is divided by the base value and multiplied by 100.
     *   *Example:* If a SKU started at $20 (Base 100), and rose to $22, the index is `(22 / 20) * 100 = 110`. It grew by 10%.
-*   **The Margin Delta:** We simply subtract the CPI Index from the SKU Index. If the result is negative (e.g., CPI = 115, SKU = 105), the retailer is lagging behind inflation by 10%, triggering a red "Margin Erosion" alert.
+*   **The Margin Delta:** We simply subtract the CPI Index from the SKU Index. If the result is negative (e.g., CPI = 115, SKU = 105), the retailer is lagging behind inflation by 10%, triggering a red "Margin Erosion" alert..
 
 ## 3. Dependencies & Integrations
 
